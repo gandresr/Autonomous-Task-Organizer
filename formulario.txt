@@ -1,0 +1,19 @@
+ATO is a smart task organizer that allows its users to be unconcerned by the deadlines of projects, reports, meetings and business trips. ATO analyzes data and recommends intelligently, optimized schedules that ensure time savings based on the user occupation, restrictions, task priority, weather and traffic.
+
+ATO improves business productivity and  helps users to organize their time efficiently. ATO's users won't have to deal with inefficient work schedules. Because of the capacity of the program to understand their habits, it assures that most of the tasks can be accomplished.
+ATO will solve UX problems observed in softwares like Microsoft Project, reducing parameters, having a friendly web interface, showing indicators of productivity and work breakdown structures in dynamic diagrams.
+Based on the above, this product may be attractive to companies that require project planning or constantly reschedule the activities of their departments. 
+
+Unlike most organizers, which allow to put tasks graphically and sharing with other people, ATO designs an optimal schedule automatically for its users, using a SVM. It receives a list of global restrictions and 2 parameters for activity: the estimated time to complete the task and the deadline. Then the system keeps track of the activities completed successfully, inquiring to the user after each deadline; it records the most successful formats of scheduling and with this information it improves time distribution as it learns from the user. It saves everything in AmazonS3, so the information is accesible from the cloud.
+
+As undergraduate student I realized the difficulties that people have to organize their time optimally, after failing in several exams because of having left everything to the last minute. That's when I learned that much of the success of a person depends of his/her ability to organize time. So I decided to design something to improve the productivity of people.
+Then I thought that if I was capable of creating ATO to organize the time of an individual, this could be the solution for large companies that need their employees to work in synchrony. Now I'm working on it.
+
+Since large companies specialized in project planning, to micro enterprises that need to reschedule their activities constantly. Even regular people who want to organize their time efficiently to be more proactive such as independent employees, students, teachers, etc.
+Currently, I expect the product gains popularity among  my acquaintances, most of whom are students and teachers, making it viral on social media. I consider it quite likely since I have made known our idea and there are several people waiting for a beta version.
+
+The freemium business model is going to be adopted, giving free full access to the application to 5 employees. For additional accounts there will be team plans since $80/year and $30/year for individuals. For the free version, advertising will be displayed related with the occupation of each employee and the tasks that need to be completed , in order to guarantee the revenue of the application.
+It is very likely that people subscribe to ATO because they have the possibility to evaluate the product and compare its advantages over payment programs like Project, Visio, and free apps like Google Calendars.
+
+Because I am capable of solving problems of all kinds, creating simplified abstractions of complicated models, and this is possible because of my multidisciplinary engineering knowledge, and experience in topics like scientific computing, machine learning, control theory. Most of these, learned through self-study and self-practice.
+Additionally, I've been working in improving my programming skills since the last year and this has strengthened me to design and implement a project like ATO. 
