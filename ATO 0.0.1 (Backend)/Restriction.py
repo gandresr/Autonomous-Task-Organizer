@@ -12,7 +12,7 @@ MINIMUM_TIME = 20         # (Integer) - Minimum duration for a restriction in mi
 class Restriction(object):
 
 
-	# Constructor of the class
+	'''Constructor of the class'''
 	# Atributes:  "title"        -  (String)             40 char max. that describes the restriction.
 	#			  "start"        -  (datetime)           Start date of the restriction
 	# 			  "duration"     -  (datetime.timedelta) Duration in seconds of the restriction. It has to be 
@@ -31,7 +31,7 @@ class Restriction(object):
 	# Input: "newStart"  -  (datetime) New start date for the restriction. It has to be greater or
 	#								   equal to datetime.datetime.now()
 	# Output: Raise Exception if "newStart" is lesser or equal to datetime.datetime.now()
-	# Purpose: Change the start date of the restriction. 
+	'''Purpose: Change the start date of the restriction. '''
 	def changeStart(self, newStart):
 		if( newStart >= datetime.datetime.now() ):
 			self.start = newStart
@@ -41,7 +41,7 @@ class Restriction(object):
 	# Input: "newDuration"  -  (datetime.timedelta) New duration of the restriction. It has to bew greater or
 	#												equal to "MINIMUM_TIME".
 	# Output: Raise exception if "newDuration" is lesser or equal to datetime.timedelta(minutes = MINIMUM_TIME)
-	# Purpose: Change the duration of a restriction.
+	'''Purpose: Change the duration of a restriction.'''
 	def changeDuration(self, newDuration):
 		if( newDuration >= datetime.timedelta(minutes = MINIMUM_TIME) ):
 			self.duration = newDuration
@@ -50,7 +50,7 @@ class Restriction(object):
 
 	# Input: "newDescription"  -  (String) New description for the restriction. Its length is max. 140 char.
 	# Output: Raise exception if "newDescription" is lesser or equal to 140 char.
-	# Purpose: Change the description of a restriction.
+	'''Purpose: Change the description of a restriction.'''
 	def editDescription(self, newDescription):
 		if( len(newDescription) <= 140 ):
 			self.description = newDescription
@@ -59,7 +59,7 @@ class Restriction(object):
 
 	# Input: "typeTitle"  -  (String) The title of the type that belongs to the restriction.
 	#								  Its length is max. 40 char.
-	# Purpose: Change the type of a restriction.
+	'''Purpose: Change the type of a restriction.'''
 	def defineType(self, typeTitle):
 		self.type = Type.Type(typeTitle)
 
