@@ -9,7 +9,9 @@ CAREERS = ['Student', 'Manager', 'Independent Worker']  # (List) - List of caree
 	# Person with difficulties to organize his/her tasks. 
 class User(object):
 
-	'''Constructor of the class'''
+	'''
+	Constructor of the class
+
 	# Inputs:     "dbirth"    -  (Integer)  * User's day of birth   [1,31]
 	#			  "mbirth"    -  (Integer)  * User's month of birth [1,12]
 	# 			  "ybirth"    -  (Integer)  * User's year of birth  [0,99999]
@@ -23,6 +25,7 @@ class User(object):
 	#			  "accuracy"  -  (float)    * User's accuracy to determine the time that he/she is going to spend
 	#										  doing some pendind activity.
 	# If the career is not in the db it is saved.
+	'''
 	def __init__(self, username, password, careers, email, dbirth, mbirth, ybirth, license = 0, friends = []):
 		self.username = username
 		self.password = password

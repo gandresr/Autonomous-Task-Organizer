@@ -75,12 +75,15 @@ class PendingActivity(object, Activity):	# Constructor of the class
 	 			 If the activity has been completed the attribute isCompleted becames True, if not it keeps being False
 	'''
 	def ask_if_completed(self):
-		print ('Have you completed this Activity?\n \
-				{title}\n \
-				Started in: {start}\n \
-				Deadline: {deadline}\n \
-				Yes (Y), No (N)'.format(title = self.title, start = self.startTime, deadline = self.deadline)
-		ans = raw_input().lower()
+		ans = raw_input
+				(
+					'Have you completed this Activity?\n \
+					{title}\n \
+					Started in: {start}\n \
+					Deadline: {deadline}\n \
+					Yes (Y), No (N)'.format(title = self.title, start = self.startTime, deadline = self.deadline)
+				).lower()
+				
 		if (ans != 'y') or (ans != 'n'):
 			ask_if_completed(self)
 		elif (ans == 'y'):
